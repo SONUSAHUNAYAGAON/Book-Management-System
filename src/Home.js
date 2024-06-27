@@ -2,12 +2,6 @@ import "./All.css";
 const Home = () => {
   return (
     <>
-      {/* <h1>
-        <marquee behavior="right">
-          Welcome To Book Management System
-        </marquee>
-      </h1> */}
-
       <div id="myslider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -73,13 +67,15 @@ const Home = () => {
         </ul>
       </div>
 
-
-
       <section className="container py-5">
         <div className="row py-4">
           <div className="col-4">
             <div class="card">
-              <img src="https://cdn.pixabay.com/photo/2017/01/30/10/03/book-2020460_1280.jpg" class="card-img-top carimg" alt="..." />
+              <img
+                src="https://cdn.pixabay.com/photo/2017/01/30/10/03/book-2020460_1280.jpg"
+                class="card-img-top carimg"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -94,7 +90,11 @@ const Home = () => {
           </div>
           <div className="col-4">
             <div class="card">
-              <img src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg" class="card-img-top carimg" alt="..." />
+              <img
+                src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg"
+                class="card-img-top carimg"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -109,7 +109,11 @@ const Home = () => {
           </div>
           <div className="col-4">
             <div class="card">
-              <img src="https://media.istockphoto.com/id/93262172/photo/two-opened-old-atlas-book-on-the-spread-map.jpg?s=612x612&w=is&k=20&c=V2J_FUBKgcUKwD9fJmPJ_IEOzcKGy8WuJcbUJXNVFoM=" class="card-img-top carimg" alt="..." />
+              <img
+                src="https://media.istockphoto.com/id/93262172/photo/two-opened-old-atlas-book-on-the-spread-map.jpg?s=612x612&w=is&k=20&c=V2J_FUBKgcUKwD9fJmPJ_IEOzcKGy8WuJcbUJXNVFoM="
+                class="card-img-top carimg"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -127,7 +131,11 @@ const Home = () => {
         <div className="row py-4">
           <div className="col-4">
             <div class="card">
-              <img src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg" class="card-img-top carimg" alt="..." />
+              <img
+                src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg"
+                class="card-img-top carimg"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -142,7 +150,11 @@ const Home = () => {
           </div>
           <div className="col-4">
             <div class="card">
-              <img src="https://cdn.pixabay.com/photo/2015/05/11/14/51/heart-762564_1280.jpg" class="card-img-top carimg" alt="..." />
+              <img
+                src="https://cdn.pixabay.com/photo/2015/05/11/14/51/heart-762564_1280.jpg"
+                class="card-img-top carimg"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -157,7 +169,11 @@ const Home = () => {
           </div>
           <div className="col-4">
             <div class="card">
-              <img src="https://cdn.pixabay.com/photo/2018/02/23/22/04/book-bindings-3176776__480.jpg" class="card-img-top carimg" alt="..." />
+              <img
+                src="https://cdn.pixabay.com/photo/2018/02/23/22/04/book-bindings-3176776__480.jpg"
+                class="card-img-top carimg"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">

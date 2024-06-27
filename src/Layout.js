@@ -84,25 +84,21 @@ const Layout = () => {
                 Search By Book
               </button>
               <div class="dropdown-menu bgnav div">
-                
-                  
-                    <Link to="name" className="nav-link">Name </Link>
-                 
-                
-               
-                  
-                    <Link to="author" className="nav-link">Author </Link>
-                 
-  
-                    <Link to="publisher" className="nav-link">Publisher </Link>
-                
-               
+                <Link to="name" className="nav-link">
+                  Name{" "}
+                </Link>
 
-                
-                  
-                    <Link to="id" className="nav-link">Id</Link>
-                  
-               
+                <Link to="author" className="nav-link">
+                  Author{" "}
+                </Link>
+
+                <Link to="publisher" className="nav-link">
+                  Publisher{" "}
+                </Link>
+
+                <Link to="id" className="nav-link">
+                  Id
+                </Link>
               </div>
             </div>
           </ul>
@@ -200,10 +196,7 @@ const Layout = () => {
                 <a href="/" target="_blank">
                   <i className="fab fa-codepen fa-2x margin"></i>
                 </a>
-                <a
-                  href="https://github.com/SONUSAHUNAYAGAON"
-                  target="_blank"
-                >
+                <a href="https://github.com/SONUSAHUNAYAGAON" target="_blank">
                   <i className="fab fa-github fa-2x margin"></i>
                 </a>
                 <a
@@ -212,10 +205,7 @@ const Layout = () => {
                 >
                   <i className="fab fa-linkedin fa-2x margin"></i>
                 </a>
-                <a
-                  href="https://youtube.com/"
-                  target="_blank"
-                >
+                <a href="https://youtube.com/" target="_blank">
                   <i className="fab fa-youtube fa-2x margin"></i>
                 </a>
               </div>
@@ -225,7 +215,7 @@ const Layout = () => {
         <div className="container pt-0 pb-4">
           <div className="row">
             <div className="col text-center text-white">
-              &copy;&trade; Cybrom Technology Pvt Ltd.
+              &copy;&trade; Sonu Sahu.
             </div>
           </div>
         </div>

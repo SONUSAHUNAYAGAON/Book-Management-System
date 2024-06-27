@@ -1,33 +1,46 @@
-
-import{useState } from "react";
+import { useState } from "react";
 import axios from "axios";
-const Author=()=>
-{
-const [input,setInput]=useState("");
+const Author = () => {
+  const [input, setInput] = useState("");
 
-const [mydata,setMydata]=useState([]);
+  const [mydata, setMydata] = useState([]);
 
-const recordSearch=()=>
-{
-	axios.get(`http://localhost:5000/Book_Keeping_System/?author=${input}`)
-	.then((res)=>{setMydata(res.data)});
-	console.log(mydata);
-}
+  const recordSearch = () => {
+    axios
+      .get(`${process.env.REACT_APP_JSON_API}/?author=${input}`)
+      .then((res) => {
+        setMydata(res.data);
+      });
+    console.log(mydata);
+  };
 
-	return(
-		<>
-		  <center >
-		<h1 class="bg-success text-white container">Welcome to search record of Author</h1>
-		<br />
-           <h2>Enter Author Name:</h2><input class="form-control mr-sm-2 col-2" type="text" value={input} onChange={(e)=>{setInput(e.target.value)}} />
-<br /><button onClick={recordSearch} class="btn btn-outline-success mb-5" >Search Record</button>
+  return (
+    <>
+      <center>
+        <h1 class="bg-success text-white container">
+          Welcome to search record of Author
+        </h1>
+        <br />
+        <h2>Enter Author Name:</h2>
+        <input
+          class="form-control mr-sm-2 col-2"
+          type="text"
+          value={input}
+          onChange={(e) => {
+            setInput(e.target.value);
+          }}
+        />
+        <br />
+        <button onClick={recordSearch} class="btn btn-outline-success mb-5">
+          Search Record
+        </button>
+      </center>
 
-
-		  </center>
-		 
- 
-{mydata.map((key)=><h3> 
-<center>  <table class="table mt-4">
+      {mydata.map((key) => (
+        <h3>
+          <center>
+            {" "}
+            <table class="table mt-4">
               <thead className="bg-primary text-white">
                 <tr class="row ml-2">
                   <th class="col-2">#ID</th>
@@ -38,7 +51,7 @@ const recordSearch=()=>
                 </tr>
               </thead>
             </table>
-  <table class="table">
+            <table class="table">
               <thead className="">
                 <tr class="row ml-2">
                   <th class="col-2">{key.id}</th>
@@ -49,10 +62,11 @@ const recordSearch=()=>
                 </tr>
               </thead>
             </table>
-  </center> 
-	 </h3>)}
-  </>
-		);
-}
+          </center>
+        </h3>
+      ))}
+    </>
+  );
+};
 
 export default Author;
