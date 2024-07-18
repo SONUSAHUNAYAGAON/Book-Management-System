@@ -11,6 +11,7 @@ const Insert = () => {
 
     setInput((values) => ({ ...values, [name]: value }));
   };
+  // use the useNavigate for redirect to other page
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,6 +20,7 @@ const Insert = () => {
       navigate("/display");
     });
   };
+
   return (
     <>
       <center>
